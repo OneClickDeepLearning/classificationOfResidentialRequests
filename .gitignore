@@ -1,2 +1,53 @@
+*.py[cod]
+
+# C extensions
+*.so
+
+# Packages
+*.egg
+.eggs
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib
+lib64
+__pycache__
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+
+# Translations
+*.mo
+
+# Mr Developer
+other
+.scrapy/
+.idea/
+.vagrant/
+data.json
+*.jl
 *.csv
-.DS_Store
+*.sqlite
+*.png
+*.log
+*.db3
+**/.DS_Store
+
+# venv
+venv/
+
+# env variables
+.env
+
