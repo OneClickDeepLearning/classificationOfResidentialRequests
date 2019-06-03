@@ -1,4 +1,4 @@
-from Training.Resnet_block import ResBlock_original, ResBlock_3layers,global_average_pooling
+from training.Resnet_block import ResBlock_original, ResBlock_3layers,global_average_pooling
 from keras.layers import Input, Conv2D, BatchNormalization, Activation
 from keras import Model
 

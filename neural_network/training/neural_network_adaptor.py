@@ -1,4 +1,4 @@
-from Training.train_adaptor import Training_adaptor
+from training.train_adaptor import Training_adaptor
 import numpy as np
 
 

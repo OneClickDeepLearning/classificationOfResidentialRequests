@@ -1,4 +1,4 @@
-import DataCleaning.cleaning as cl
+import data_cleaning.cleaning as cl
 import pandas as pd
 import csv
 import numpy as np

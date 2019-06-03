@@ -1,5 +1,5 @@
 import csv
-import DataCleaning.cleaning as cl
+import data_cleaning.cleaning as cl
 
 file2 = '/Users/sunjincheng/Documents/valid_data_all.csv'
 file2 = open(file2, encoding='gb18030')

@@ -5,7 +5,7 @@ from gensim.models.word2vec import LineSentence
 # 'I am a good student'.split(),
 # 'Good good study day day up'.split()
 # ]
-# model = word2vec.Word2Vec(sents, size=100, window=5, min_count=2, workers=10)
+# model = word2vec.word2vec(sents, size=100, window=5, min_count=2, workers=10)
 # # 打印单词'good'的词向量
 # print(model.wv.word_vec('good'))
 # # 打印和'good'相似的前2个单词

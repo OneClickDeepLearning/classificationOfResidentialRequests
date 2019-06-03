@@ -1,4 +1,4 @@
-from Training.neural_network_adaptor import NN_training_adaptor
+from training.neural_network_adaptor import NN_training_adaptor
 
 nadpt = NN_training_adaptor()
 nadpt.load_data( '../data/train_x.npy', '../data/train_y.npy', '../data/test_x.npy', '../data/test_y.npy')

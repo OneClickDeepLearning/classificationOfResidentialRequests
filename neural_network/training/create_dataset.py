@@ -4,7 +4,7 @@ import re
 import jieba
 import numpy as np
 from gensim.models import Word2Vec
-# from DataCleaning import cleaning as cl
+# from data_cleaning import cleaning as cl
 file1 = '../data/80000_trainset.csv'
 file2 = '../models/CBOW.model'
 file3 = '../data/train_x.npy'

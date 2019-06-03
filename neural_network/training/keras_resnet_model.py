@@ -14,7 +14,7 @@ from keras import optimizers
 from keras.callbacks import EarlyStopping
 import sys
 sys.path.append('/home/oneclick/CFSC/CFSC/')
-from Training.resnet import Res50
+from training.resnet import Res50
 
 def bn_relu(layer, dropout=0, **params):
     layer = BatchNormalization()(layer)
