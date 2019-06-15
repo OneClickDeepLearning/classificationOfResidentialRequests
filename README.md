@@ -3,6 +3,16 @@
 Implementation of Hybrid Machine Learning Models of Classifying Residential Requests in Smart Cities Paper
 > Link of our paper
 
+## Local Environment Specification
+Training and testing ran on a machine with:
+- Ubuntu 16.04 LTS
+- Nvidia GeForce GTX 1070
+- CUDA version: 9.0
+- Cudnn version: 7.3.0
+- Python version: 3.5.2
+- Tensorflow-gpu: 1.11.0
+- Keras: 2.2.4
+
 ## Introduction
 This implementation includes all the tasks that was described in the paper, including feature engineering, hybrid machine learning, different classifiers, convolution neural network models, etc. We split the implementation in to four parts:
 - Bayesian model
