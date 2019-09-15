@@ -1,7 +1,7 @@
 # classificationOfResidentialRequests
 
 Implementation of Hybrid Machine Learning Models of Classifying Residential Requests in Smart Cities Paper
-> Link of our paper
+<a href="https://github.com/OneClickDeepLearning/classificationOfResidentialRequests/blob/master/Hybrid%20Machine%20Learning%20Models%20of%20Classifying%20Residential%20Requests%20for%20Smart%20Dispatching.pdf">Our Paper</a>
 
 ## Local Environment Specification
 Training and testing ran on a machine with:
