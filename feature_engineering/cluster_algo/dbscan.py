@@ -10,8 +10,7 @@ from gensim.models import LdaModel
 from sklearn.cluster import DBSCAN
 from sklearn.cluster.optics_ import OPTICS
 from sklearn.decomposition import PCA
-
-from nlp import jieba
+import jieba
 
 
 def preprocess():
@@ -25,8 +24,9 @@ def preprocess():
             row = row.strip('\n').split(',')
             temp = re.sub(regexp_punct, " ", row[0])
             token = jieba.cut(temp)
-            industry_lst.extend(i for i in token if len(i) > 1)
-            industry_lda.append(industry_lst)
+            temp_lst = [i for i in token if len(i) > 1]
+            industry_lst.extend(temp_lst)
+            industry_lda.append(temp_lst)
             industry_lda_dict[iid] = temp
 
     for iid, i in enumerate(token):
@@ -41,7 +41,7 @@ def preprocess():
 
     token = list(place_w2v.keys())
 
-    w2v = [value for value in place_w2v.values]
+    w2v = [value for value in place_w2v.values()]
     pca = PCA(n_components=2)
     w2v_2d_array = np.array(pca.fit_transform(w2v))
     token_dict = {token[i]: v for i, v in enumerate(w2v_2d_array)}
@@ -50,13 +50,13 @@ def preprocess():
 
 
 def run_dbscan(w2v_2d_array):
-    db = DBSCAN(eps=0.8, min_samples=3).fit_predict(X)
+    db = DBSCAN(eps=0.8, min_samples=3).fit_predict(w2v_2d_array)
     plt.scatter(w2v_2d_array[:, 0], w2v_2d_array[:, 1], c=db)
     plt.show()
 
 
 def run_optics(w2v_2d_array, industry_lst):
-    clust = OPTICS(min_samples=1, rejection_ratio=0.7)
+    clust = OPTICS(min_samples=2)
     opt = clust.fit_predict(w2v_2d_array)
     labels = clust.labels_
     optics_dict = defaultdict(list)
@@ -144,7 +144,7 @@ def run_lda_with_entropy(industry_lda, token_dict, max_k=5):
             list_temp5 = list(temp5[0])
             entro_result_final[number] = list_temp5.index(max(list_temp5))
 
-    final_result = {}
+    final_result = defaultdict(list)
     for i in range(0, max_k + 1):
         for key, value in entro_result_final.items():
             if value == i:

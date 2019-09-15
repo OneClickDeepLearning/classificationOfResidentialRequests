@@ -137,3 +137,7 @@ def main():
     data_lst, dict_agency_label = read_data()
     count_label(data_lst)
     draw_pic(dict_agency_label)
+
+
+if __name__ == '__main__':
+    main()
