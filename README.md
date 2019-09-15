@@ -19,7 +19,7 @@ This implementation includes all the tasks that was described in the paper, incl
 - Neural network model
 - Feature engineering
  
-## Feature Engineering
+## <a href="https://github.com/OneClickDeepLearning/classificationOfResidentialRequests/tree/master/feature_engineering">Feature Engineering</a>
 Feature engineering processes and transforms the data set in Chinese texts to word vectors as inputs of machine learning models. 
 - Data Preprocess
 	- Segmented into tokens
@@ -30,7 +30,7 @@ Feature engineering processes and transforms the data set in Chinese texts to wo
 - Word Embedding and Vectorization
 	- Word embedding using Word2Vec 
 	- Word vector using TF-IDF
-## Hierarchical Classification 
+## <a href="https://github.com/OneClickDeepLearning/classificationOfResidentialRequests/tree/master/bayes">Hierarchical Classification</a>
 We develop a hierarchical classification method to handle classification.
 - K-Means and GMM Clustering
 - OPTICS, LDA and Entropy Calculation
