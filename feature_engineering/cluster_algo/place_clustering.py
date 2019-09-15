@@ -84,7 +84,6 @@ def plot_res(w2v_2d, kmeans_gmm_res):
 
 def main():
     w2v_2d, kmeans_gmm_res = kmeans_gmm()
-    plot_res(w2v_2d, kmeans_gmm_res)
 
 
 if __name__ == '__main__':
