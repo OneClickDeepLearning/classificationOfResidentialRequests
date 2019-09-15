@@ -3,7 +3,7 @@
 Hierarchical baye model consists of 1 model as the first layer, and 5 model as the second layer. The First layer model(4w_01234_classifier) is to classify the input into 5 classes(zk0, zk1, zk2, zk3, zk4), and then the corresponding model in the second layer will used to do the further classification(4w_zk0_classifier, 4w_zk1_classifier, 4w_zk2_classifier, 4w_zk3_classifier, 4w_zk4_classifier).
 
 Here, we trained the Hierarchical bayes model over 40,000, and 80,000 dataset respectively. The corresponding model dump file as follow:
-
+```
 4w_01234_classifier
 	|- 4w_zk0_classifier 
 	|- 4w_zk1_classifier
@@ -17,7 +17,7 @@ Here, we trained the Hierarchical bayes model over 40,000, and 80,000 dataset re
 	|- 8w_zk2_classifier
 	|- 8w_zk3_classifier
 	|- 8w_zk4_classifier
-
+```
 
 ## Processing && Reproduction
 1. Labeling 
